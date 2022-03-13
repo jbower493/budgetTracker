@@ -1,6 +1,4 @@
-type budget = {
-    name: string
-}
+import type { budget } from './budgetsSlice';
 
 const BudgetsViewWeb = () => {
 
