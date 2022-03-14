@@ -1,9 +1,18 @@
 module.exports = function (api) {
-    api.cache(true);
+
+    const nativePresets = [
+        'babel-preset-expo'
+    ];
+
+    const webPresets = [
+        '@babel/preset-env',
+        '@babel/preset-react',
+        '@babel/preset-typescript'
+    ];
 
     return {
-        presets: [
-            'babel-preset-expo'
-        ]
+        presets: api.caller(caller => caller === 'babel-loader')
+            ? webPresets
+            : nativePresets
     };
 };

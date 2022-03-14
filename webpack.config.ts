@@ -12,7 +12,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Budget Tracker',
             template: 'public/index.html'
-        }),
+        })
     ],
     module: {
         rules: [
