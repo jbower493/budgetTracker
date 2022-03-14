@@ -1,10 +1,10 @@
 import React from 'react';
-import Budgets from '../budgets';
+import UserRouter from '../../routers/user';
 
 const AppViewWeb = () => {
     return (
         <div>
-            <Budgets />
+            <UserRouter />
         </div>
     );
 };

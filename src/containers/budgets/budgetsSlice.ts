@@ -26,7 +26,7 @@ export const budgetsSlice = createSlice({
     name: 'budgets',
     initialState,
     reducers: {
-        addBudget: (state, action: PayloadAction<budget>) => {console.log('reducer')
+        addBudget: (state, action: PayloadAction<budget>) => {
             state.budgets.push(action.payload);
         },
         removeBudget: (state, action: PayloadAction<number>) => {
