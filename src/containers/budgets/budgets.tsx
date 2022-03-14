@@ -1,3 +1,4 @@
+import React from 'react';
 import type { budget } from './budgetsSlice';
 
 const BudgetsViewWeb = () => {
@@ -11,6 +12,9 @@ const BudgetsViewWeb = () => {
         },
         {
             name: 'Transport'
+        },
+        {
+            name: 'Going out'
         }
     ]
 

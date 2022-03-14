@@ -1,3 +1,4 @@
+import React from 'react';
 import Budgets from '../budgets';
 
 const AppViewWeb = () => {

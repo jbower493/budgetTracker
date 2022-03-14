@@ -1,3 +1,4 @@
+import React from 'react';
 import BudgetsView from './budgets';
 
 const Budgets = () => {
