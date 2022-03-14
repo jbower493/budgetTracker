@@ -9,14 +9,24 @@ interface BudgetsState {
 };
 
 const initialState: BudgetsState = {
-    budgets: []
+    budgets: [
+        {
+            name: 'Food'
+        },
+        {
+            name: 'Car'
+        },
+        {
+            name: 'Bills'
+        }
+    ]
 };
 
 export const budgetsSlice = createSlice({
     name: 'budgets',
     initialState,
     reducers: {
-        addBudget: (state, action: PayloadAction<budget>) => {
+        addBudget: (state, action: PayloadAction<budget>) => {console.log('reducer')
             state.budgets.push(action.payload);
         },
         removeBudget: (state, action: PayloadAction<number>) => {
