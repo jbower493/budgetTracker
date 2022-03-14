@@ -1,9 +1,9 @@
 import App from './src/containers/app';
 
-const AppNativeEntryr = () => {
+const AppNativeEntry = () => {
     return (
         <App />
     );
 }
 
-export default AppNativeEntryr;
+export default AppNativeEntry;
