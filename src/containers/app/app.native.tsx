@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Budgets from '../budgets';
 
 const AppViewNative = () => {
     return (
         <View style={styles.container}>
-            <Text>Welcome to the Native App!</Text>
+            <Budgets />
             <StatusBar style="auto" />
         </View>
     );
