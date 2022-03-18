@@ -1,8 +1,8 @@
-import App from './src/containers/app';
+import AppWrapper from './appWrapper';
 
 const AppNativeEntry = () => {
     return (
-        <App />
+        <AppWrapper />
     );
 }
 
